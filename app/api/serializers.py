@@ -4,7 +4,7 @@ from app.models import Notebook
 
 
 class NotebookSerializer(serializers.ModelSerializer):
-    hdd = serializers.JSONField(Notebook.hdd)
+    hdd = serializers.JSONField()
 
     class Meta:
         model = Notebook
